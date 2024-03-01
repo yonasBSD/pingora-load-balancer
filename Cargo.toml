@@ -1,0 +1,17 @@
+[package]
+name = "pingora"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pingora-core = { version = "*", git = "https://github.com/yonasBSD/pingora", rev = "fa2310e5992f2cec4134a2e986b0972b4f19e933" }
+pingora-load-balancing = { version = "*", git = "https://github.com/yonasBSD/pingora", rev = "fa2310e5992f2cec4134a2e986b0972b4f19e933" }
+pingora-proxy = { version = "*", git = "https://github.com/yonasBSD/pingora", rev = "fa2310e5992f2cec4134a2e986b0972b4f19e933" }
+pingora-http = { version = "*", git = "https://github.com/yonasBSD/pingora", rev = "fa2310e5992f2cec4134a2e986b0972b4f19e933" }
+tokio = "*"
+async-trait = "*"
+log = "*"
+structopt = "*"
+env_logger = "*"
